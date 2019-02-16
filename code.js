@@ -11,7 +11,6 @@ for(var i = 0; i <10; i++) {
     rots[i] = vects[i].dir;
 }
 }
-
 function update() {
     // background(51,51,51);
     fill(255,0,0);
@@ -25,19 +24,12 @@ function update() {
 }
 rot+=0.01;
 }
-
 function reset() {
     clear();
     for(var i = 0; i <10; i++) {
         vect = new vector();
         vects[i] = vect.random2D();
         rots[i] = vects[i].dir;
-    }
-}
-
-function keyPressed() {
-    if(key == 'r') {
-        reset();
     }
 }
 
