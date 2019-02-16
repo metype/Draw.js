@@ -320,6 +320,9 @@ let vector = function() {
     tempvect.dir=random(TWO_PI);
     return(tempvect);
   }
+  this.renderVector = function(x,y) {
+    line(x,y,cos(this.x),sin(this.y));
+  }
 }
 
 function createVector(x,y,dir,mag) {
