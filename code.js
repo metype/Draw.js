@@ -4,4 +4,5 @@ function setup() {
 
 function update() {
     background(51);
+    
 }

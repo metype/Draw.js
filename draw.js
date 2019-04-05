@@ -390,11 +390,11 @@ function createVector(x = 0, y = 0, dir = 0, mag = 0) {
   return (tempvect);
 }
 
-
-// WORK ON ANGLE MODES!!! Also, refactor everything so that it's not pure ugly, please.
-// function radiansToDegrees(val) {
-//   return(val*(180/PI));
-// }
-// function degreesToRadians(val) {
-//   return(val*(PI/180));
-// }
+function img(src, width, height, alt = "") {
+  var img = document.createElement("img");
+  img.src = src;
+  img.width = width;
+  img.height = height;
+  img.alt = alt;
+  document.body.appendChild(img);
+}
