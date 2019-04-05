@@ -1,3 +1,7 @@
 function setup() {
- newCanvas(winWidth,winheight);   
+    newCanvas(winWidth,winheight);   
+}
+
+function update() {
+    background(51);
 }
