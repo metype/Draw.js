@@ -64,6 +64,8 @@ var translationX = 0;
 var translationY = 0;
 var key = ' ';
 let frameCount = 0;
+let winWidth = window.innerWidth;
+let winHeight = window.innerHeight;
 function checkDraw() {
   if (typeof update === 'function') {
     if (typeof setup === 'function') {
