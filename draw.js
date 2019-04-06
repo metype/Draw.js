@@ -143,6 +143,7 @@ function newCanvas(w = 400, h = 400) {
   c.style.transformOrigin = '0 0';
   c.width = w;
   c.height = h;
+  c.margin = "0px 0px 0px 0px";
   document.body.appendChild(c);
   width = c.width
   height = c.height

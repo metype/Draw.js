@@ -1,8 +1,8 @@
-function setup() {
-    newCanvas(winWidth,winheight);   
-}
+// function setup() {
+//     newCanvas(winWidth,winHeight);   
+// }
 
-function update() {
-    background(51);
-    
-}
+// function update() {
+//     background(51);
+
+// }
