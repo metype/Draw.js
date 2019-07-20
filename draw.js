@@ -64,8 +64,6 @@ var translationX = 0;
 var translationY = 0;
 var key = ' ';
 let frameCount = 0;
-let winWidth = window.innerWidth;
-let winHeight = window.innerHeight;
 function checkDraw() {
   if (typeof update === 'function') {
     if (typeof setup === 'function') {
@@ -143,7 +141,6 @@ function newCanvas(w = 400, h = 400) {
   c.style.transformOrigin = '0 0';
   c.width = w;
   c.height = h;
-  c.margin = "0px 0px 0px 0px";
   document.body.appendChild(c);
   width = c.width
   height = c.height
@@ -393,11 +390,11 @@ function createVector(x = 0, y = 0, dir = 0, mag = 0) {
   return (tempvect);
 }
 
-function img(src, width, height, alt = "") {
-  var img = document.createElement("img");
-  img.src = src;
-  img.width = width;
-  img.height = height;
-  img.alt = alt;
-  document.body.appendChild(img);
-}
+
+// WORK ON ANGLE MODES!!! Also, refactor everything so that it's not pure ugly, please.
+// function radiansToDegrees(val) {
+//   return(val*(180/PI));
+// }
+// function degreesToRadians(val) {
+//   return(val*(PI/180));
+// }
